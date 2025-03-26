@@ -36,7 +36,7 @@
 	--selection_color: light-dark(white, black);
 
 	/* Buttons */
-	--button_font: 700 1rem/var(--line-height) Arial, Helvetica, sans-serif;
+	--button_font: 700 0.95rem/var(--line-height) Arial, Helvetica, sans-serif;
 	--button_bg: transparent;
 	--button_border: 1px solid light-dark(black, white);
 	--button_border-radius: 0px;
@@ -71,8 +71,8 @@
 	--outline: 4px solid cornflowerblue;
 
 	/* Baseline grid */
-	--baseline_line-height-2x: calc(var(--baseline_line-height) * 2);
-	--baseline_line-height-4x: calc(var(--baseline_line-height) * 4);
+	--baseline_line-height-2x: calc(var(--line-height) * 2);
+	--baseline_line-height-4x: calc(var(--line-height) * 4);
 	
 	/* Grids */
 	--gap: 1rem;
