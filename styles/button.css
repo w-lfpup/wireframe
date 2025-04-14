@@ -1,4 +1,15 @@
 /* does css nesting provide a more concise sytnax for states? */
+/*
+	What does a button need?
+	--outline / _hover / _focus / _active / _disabled
+	--border
+	--background
+	--padding
+	--font
+	--opacicty
+	--box-shadow
+*/
+
 :is(button, input[type=button]) {
 	appearance: none;
 	background: var(--action_bg-1);
