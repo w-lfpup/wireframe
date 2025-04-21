@@ -4,7 +4,7 @@ input[type=radio] {
 	block-size: 1.25rem;
 	border-radius: 50%;
 	cursor: pointer;
-	background-color: var(--action_bg-0);
+	background-color: var(--button_bg);
 	border: var(--button_border);
 
 	&:hover {}

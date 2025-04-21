@@ -1,6 +1,6 @@
 # Wireframe
 
-`Wireframe-rs` is a CSS component set for rapid prototyping and high quality user interfaces.
+`Wireframe-rs` is a component set for building resilient, high-quality, and themeable user interfaces.
 
 ## License
 

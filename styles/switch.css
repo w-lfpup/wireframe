@@ -4,7 +4,7 @@ input[role=switch] {
 	block-size: 1.25rem;
 	line-height: 1rem;
 	cursor: pointer;
-	background-color: var(--action_bg-0);
+	background-color: var(--button_bg);
 	border: var(--button_border);
 
 	&:hover {}

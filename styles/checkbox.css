@@ -2,7 +2,7 @@
 	appearance: none;
 	inline-size: 1.25rem;
 	block-size: 1.25rem;
-	background-color: var(--action_bg-0);
+	background-color: var(--button_bg);
 	border: none;
 	border: var(--button_border);
 	cursor: pointer;

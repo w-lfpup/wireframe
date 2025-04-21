@@ -12,7 +12,7 @@
 
 :is(button, input[type=button]) {
 	appearance: none;
-	background: var(--action_bg-1);
+	background: var(--button_bg);
 	font: var(--button_font);
 	border: var(--button_border);
 	cursor: pointer;

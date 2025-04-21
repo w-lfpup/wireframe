@@ -1,7 +1,7 @@
 select{
 	/* appearance: none; */
 	display: inline-block;
-	background: var(--action_bg-1);
+	background-color: var(--button_bg);
 	font: var(--select_font);
 	border: var(--select_border);
 	cursor: pointer;
