@@ -7,8 +7,14 @@ textarea {
 	border-bottom: var(--text-input_border-bottom);
 	cursor: initial;
 
+	border-start-start-radius: var(--text-input_border-radius);
+	border-start-end-radius: var(--text-input_border-radius);
+
 	&:hover {}
-	&:focus {}
+	&:focus {
+		outline: var(--button_outline);
+		outline-offset: var(--button_outline-offset);
+	}
 	&:active {}
 	&:disabled {
 		cursor: not-allowed;

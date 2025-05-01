@@ -1,13 +1,9 @@
 input[type=file] {
 	appearance: none;
-	position:relative;
-	cursor: pointer;
 	font: var(--font);
 	color: var(--color);
 	cursor: pointer;
-	/* doesn't make sense yet */
-	margin: -4px;
-	padding: 4px;
+	
 
 	&:disabled {
 		cursor: not-allowed;
@@ -18,6 +14,15 @@ input[type=file] {
 	background-color: var(--button_bg);
 	font: var(--button_font);
 	border: var(--button_border);
+	appearance: none;
+	background: var(--button_background);
+	font: var(--button_font);
+	border: var(--button_border);
+	border-radius: var(--button_border-radius, 10%);
+	padding-block: var(--button_padding-block, 0.25rem);
+	padding-inline: var(--button_padding-inline, 0.5rem);
+	cursor: pointer;
+	margin-inline-end: 1.5rem;
 }
 
 /* :focus-within::file-selector-button, :focus::file-selector-button {

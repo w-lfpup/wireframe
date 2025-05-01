@@ -1,24 +1,46 @@
-input[role=switch] {
+input[type=checkbox][role=switch] {
 	appearance: none;
-	inline-size: 3.5rem;
-	block-size: 1.25rem;
+	position: relative;
+	display: inline-flex;
+	justify-content: start;
+	inline-size: 3rem;
+	block-size: 1.5rem;
 	line-height: 1rem;
 	cursor: pointer;
-	background-color: var(--button_bg);
 	border: var(--button_border);
 
-	&:hover {}
-	&:focus {}
-	&:active {}
-	&:checked {
-		background-color: darkgray;
+	&::before {
+		position: relative;
+		content: '';
 	}
+	&::after {
+		position: relative;
+		content: '';
+		display: flex;
+		justify-content: center;
+		inline-size: 1rem;
+		block-size: 1rem;
+		border: var(--button_border);
+		border-radius: 4px;
+		margin-inline: calc((1.5rem - 1rem) * 0.5 - 2px);
+		/* block-size, ::after block-size * 0.5 - (border width * 2) */
+	}
+	&:hover {}
+	&:focus {
+		outline: var(--button_outline);
+		outline-offset: var(--button_outline-offset);
+	}
+	&:active {}
+	&:checked::before {
+		flex-grow: 1;
+	}
+	&:checked::after {
+		content: '\002714';
+		background-color: #323232;
+	}
+	&:checked {}
 	&:disabled {
 		cursor: not-allowed;
 	}
-}
-
-input[role=switch]:checked {
-	background-color: darkgray;
 }
 

@@ -1,11 +1,14 @@
 select{
-	/* appearance: none; */
+	appearance: none;
 	display: inline-block;
 	background-color: var(--button_bg);
 	font: var(--select_font);
 	border: var(--select_border);
 	cursor: pointer;
 
+	padding-block: var(--button_padding-block);
+	padding-inline: var(--button_padding-inline);
+	
 	&:hover {}
 	&:focus {}
 	&:active {}
@@ -13,3 +16,7 @@ select{
 		cursor: not-allowed;
 	}
 }
+/* 
+option {
+	font: var(--select_font);
+} */

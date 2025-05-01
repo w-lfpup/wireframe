@@ -5,10 +5,18 @@
 	font: var(--text-input_font);
 	border: var(--text-input_border);
 	border-bottom: var(--text-input_border-bottom);
+	border-start-start-radius: var(--text-input_border-radius);
+	border-start-end-radius: var(--text-input_border-radius);
+
 	cursor: initial;
+	padding-inline: var(--text-input_padding-inline);
+	padding-block: var(--text-input_padding-block);
 
 	&:hover {}
-	&:focus {}
+	&:focus {
+		outline: var(--button_outline);
+		outline-offset: var(--button_outline-offset);
+	}
 	&:active {}
 	&:disabled {
 		cursor: not-allowed;

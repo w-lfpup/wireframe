@@ -1,17 +1,31 @@
-input[type=radio] {
+:is(input[type=radio]) {
 	appearance: none;
+	position: relative;
+	display: inline-flex;
 	inline-size: 1.25rem;
 	block-size: 1.25rem;
-	border-radius: 50%;
-	cursor: pointer;
-	background-color: var(--button_bg);
+	justify-content: center;
+	align-items: center;
 	border: var(--button_border);
+	border-radius: 50%;
+	box-sizing: content-box;
+	cursor: pointer;
 
+	&::after {
+		content: '';
+		inline-size: 0.75rem;
+		block-size: 0.75rem;
+		border-radius: 50%;
+	}
 	&:hover {}
-	&:focus {}
+	&:focus {
+		outline: var(--button_outline);
+		outline-offset: var(--button_outline-offset)
+	}
 	&:active {}
-	&:checked {
-		background-color: darkgray;
+	&:checked {}
+	&:checked::after {
+		background-color: white;
 	}
 	&:disabled {
 		cursor: not-allowed;

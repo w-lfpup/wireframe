@@ -8,8 +8,16 @@
 	border-bottom: var(--number-input_border-bottom);
 	cursor: text;
 
+	padding-inline: var(--number-input_padding-inline);
+	padding-block: var(--number-input_padding-block);
+
+	/* letter-spacing: 0.05rem; */
+
 	&:hover {}
-	&:focus {}
+	&:focus {
+		outline: var(--button_outline);
+		outline-offset: var(--button_outline-offset);
+	}
 	&:active {}
 	&:disabled {
 		cursor: not-allowed;
