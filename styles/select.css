@@ -1,13 +1,13 @@
 select{
-	appearance: none;
-	display: inline-block;
-	background-color: var(--button_bg);
+	background: none;
 	font: var(--select_font);
-	border: var(--select_border);
+	border: var(--button_border);
+	border-radius: var(--button_border-radius);
 	cursor: pointer;
 
 	padding-block: var(--button_padding-block);
 	padding-inline: var(--button_padding-inline);
+
 	
 	&:hover {}
 	&:focus {}
@@ -15,6 +15,10 @@ select{
 	&:disabled {
 		cursor: not-allowed;
 	}
+}
+
+select option {
+	background-color: transparent;
 }
 /* 
 option {
