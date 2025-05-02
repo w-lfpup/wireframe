@@ -4,12 +4,14 @@
 	appearance: none;
 	background: var(--number-input_bg);
 	font: var(--number-input_font);
+	
 	border: var(--number-input_border);
 	border-bottom: var(--number-input_border-bottom);
 	cursor: text;
 
 	padding-inline: var(--number-input_padding-inline);
 	padding-block: var(--number-input_padding-block);
+	color: var(--color);
 
 	/* letter-spacing: 0.05rem; */
 
@@ -17,6 +19,8 @@
 	&:focus {
 		outline: var(--button_outline);
 		outline-offset: var(--button_outline-offset);
+		/* border: 2px transparent solid;
+		border-bottom: var(--text-input_border-bottom); */
 	}
 	&:active {}
 	&:disabled {

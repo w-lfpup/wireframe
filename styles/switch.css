@@ -4,10 +4,12 @@ input[type=checkbox][role=switch] {
 	display: inline-flex;
 	justify-content: start;
 	inline-size: 3rem;
-	block-size: 1.5rem;
-	line-height: 1rem;
+	block-size: 1.75rem;
+	font-size: 0.75em;
+	/* line-height: 1rem; */
 	cursor: pointer;
 	border: var(--button_border);
+	border-radius: 1rem;
 
 	&::before {
 		position: relative;
@@ -18,10 +20,11 @@ input[type=checkbox][role=switch] {
 		content: '';
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		inline-size: 1rem;
 		block-size: 1rem;
 		border: var(--button_border);
-		border-radius: 4px;
+		border-radius: var(--border-radius-pill);
 		margin-inline: calc((1.5rem - 1rem) * 0.5 - 2px);
 		/* block-size, ::after block-size * 0.5 - (border width * 2) */
 	}
@@ -36,7 +39,6 @@ input[type=checkbox][role=switch] {
 	}
 	&:checked::after {
 		content: '\002714';
-		background-color: #323232;
 	}
 	&:checked {}
 	&:disabled {

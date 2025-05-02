@@ -6,14 +6,17 @@ textarea {
 	border: var(--text-input_border);
 	border-bottom: var(--text-input_border-bottom);
 	cursor: initial;
-
-	border-start-start-radius: var(--text-input_border-radius);
-	border-start-end-radius: var(--text-input_border-radius);
+	field-sizing: content;
+	/* min-width: initial; */
+	min-inline-size: 225px;
+	min-block-size: calc(var(--line-height) * 2);
 
 	&:hover {}
 	&:focus {
 		outline: var(--button_outline);
 		outline-offset: var(--button_outline-offset);
+		/* border: 2px transparent solid;
+		border-bottom: var(--text-input_border-bottom); */
 	}
 	&:active {}
 	&:disabled {
