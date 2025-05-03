@@ -1,13 +1,12 @@
 /* places for fonts and line heights */
 :is(input[type=text], input[type=password], input[type=email], input[type=url]) {
 	appearance: none;
-	background: var(--text-input_bg);
+	position: relative;
+	display:inline-flex;
 	font: var(--text-input_font);
-	border: var(--text-input_border);
+	border: none;
+	background: var(--text-input_bg, #232323);
 	border-bottom: var(--text-input_border-bottom);
-	/* border-start-start-radius: var(--text-input_border-radius);
-	border-start-end-radius: var(--text-input_border-radius); */
-
 	cursor: initial;
 	padding-inline: var(--text-input_padding-inline);
 	padding-block: var(--text-input_padding-block);
@@ -17,8 +16,6 @@
 	&:focus {
 		outline: var(--button_outline);
 		outline-offset: var(--button_outline-offset);
-		/* border: 2px transparent solid;
-		border-bottom: var(--text-input_border-bottom); */
 	}
 	&:active {}
 	&:disabled {

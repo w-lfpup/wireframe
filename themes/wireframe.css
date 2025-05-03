@@ -3,6 +3,27 @@
 :root {
 	color-scheme: light dark;
 
+	/*
+		broad swath
+
+		dont forget gestault
+
+		correlate colors to state
+		disabled colors
+		invalid colors
+		focus colors
+		active colors
+		hover colors
+		outline covers
+
+		correlate shape and color to interactions
+		interaction colors
+		confirm / submit interaction colors
+		border-radius to distinct betweent pointer interactions, text number keyboard interactions
+
+		animation time
+	*/
+
 	/* debug */
 	--baseline-grid-color: light-dark(#a8a8a8, #343434);
 
@@ -42,8 +63,8 @@
 	--button_font: 700 0.95rem/0.95rem Arial, Helvetica, sans-serif;
 	--button_bg: transparent;
 	--button_border: 2px solid light-dark(black, white);
-	--button_outline: 2px cornflowerblue solid;
-	--button_outline-offset: 4px;
+	--button_outline: 4px cornflowerblue solid;
+	--button_outline-offset: 6px;
 	--button_padding-block: 0.75rem;
 	--button_border-radius: 4px;
 	/* --button_border-radius: calc(var(--button_padding-block) * 2 + var(--line-height)); */
@@ -52,14 +73,16 @@
 
 	/* Text inputs */
 	--text-input_font: 400 1rem/var(--line-height) Arial, Helvetica, sans-serif;
-	--text-input_bg: transparent;
+	--text-input_bg: #343434;
 	--text-input_border: 2px solid light-dark(#dfdfdf, #787878);
-	--text-input_border-bottom: 2px solid light-dark(black, white);
+	--text-input_border-bottom: 2px solid light-dark(black, #909090);
 	--text-input_padding-inline: 0.5rem;
 	--text-input_padding-block: 0.25rem;
 	--text-input_outline: 1px;
 	--text-input_outline-offset: 0px;
 	--text-input_border-radius: 4px;
+	--text-input_border-radius-bottom: 0px;
+
 
 	/* Number inputs */
 	--number-input_font: 400 1rem/var(--line-height) Arial, Helvetica, sans-serif;
@@ -72,7 +95,7 @@
 	--number-input_padding-block: 0.25rem;
 
 	/* Select */
-	--select_font: 400 1rem/1rem Arial, Helvetica, sans-serif;
+	--select_font: 400 0.95rem/0.95rem Arial, Helvetica, sans-serif;
 	--select_bg: transparent;
 	--select_border: 1px solid light-dark(black, white);
 

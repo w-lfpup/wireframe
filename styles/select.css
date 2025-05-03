@@ -10,17 +10,22 @@ select{
 
 	
 	&:hover {}
-	&:focus {}
+	&:focus {
+		outline: var(--button_outline);
+		outline-offset: var(--button_outline-offset);
+	}
 	&:active {}
 	&:disabled {
 		cursor: not-allowed;
 	}
 }
 
+
 select option {
-	background-color: transparent;
+	appearance: none;
+	/* font: var(--select_font); */
+	background: var(--text-input_bg);
+	color: var(--color);
+	padding-block: var(--button_padding-block);
+	padding-inline: var(--button_padding-inline);
 }
-/* 
-option {
-	font: var(--select_font);
-} */

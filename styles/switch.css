@@ -5,7 +5,7 @@ input[type=checkbox][role=switch] {
 	justify-content: start;
 	inline-size: 3rem;
 	block-size: 1.75rem;
-	font-size: 0.75em;
+	font-size: 0.5em;
 	/* line-height: 1rem; */
 	cursor: pointer;
 	border: var(--button_border);
@@ -21,12 +21,12 @@ input[type=checkbox][role=switch] {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		inline-size: 1rem;
-		block-size: 1rem;
+		inline-size: 0.5rem;
+		block-size: 0.5rem;
 		border: var(--button_border);
 		border-radius: var(--border-radius-pill);
-		margin-inline: calc((1.5rem - 1rem) * 0.5 - 2px);
-		/* block-size, ::after block-size * 0.5 - (border width * 2) */
+		margin-inline: calc((1.5rem - 0.5rem) * 0.5 - 2px);
+
 	}
 	&:hover {}
 	&:focus {
@@ -39,6 +39,10 @@ input[type=checkbox][role=switch] {
 	}
 	&:checked::after {
 		content: '\002714';
+		inline-size: 0.95rem;
+		block-size: 0.95rem;
+		border-radius: var(--border-radius-pill);
+		margin-inline: calc((1.5rem - 0.95rem) * 0.5 - 2px);
 	}
 	&:checked {}
 	&:disabled {

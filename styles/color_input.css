@@ -9,7 +9,10 @@ input[type=color] {
 	cursor: pointer;
 
 	&:hover {}
-	&:focus {}
+	&:focus {
+		outline: var(--button_outline);
+		outline-offset: var(--button_outline-offset);
+	}
 	&:active {}
 	&:disabled {
 		cursor: not-allowed;
