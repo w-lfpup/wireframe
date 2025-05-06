@@ -1,5 +1,5 @@
 /* wireframe component styles */
-/* @import "../styles/debug.css"; */
+@import "../styles/debug.css";
 
 /* Spacing, grids, typography */
 @import "../styles/baseboard.css";

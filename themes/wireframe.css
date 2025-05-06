@@ -35,7 +35,7 @@
 	--border-radius-pill: 50%;
 
 	/* Typography */
-	--font: 400 1rem/var(--line-height)  Arial, Helvetica, sans-serif;
+	--font: 400 1rem/var(--line-height)  "SF Pro", "Roboto Flex", "Segoe UI Variable", Arial, Helvetica, sans-serif;
 	--color: light-dark(black, white);
 
 	/* Headers */
@@ -60,32 +60,35 @@
 	--selection_color: light-dark(white, black);
 
 	/* Buttons */
-	--button_font: 700 0.95rem/0.95rem Arial, Helvetica, sans-serif;
+	--button_font: 100 0.8rem/0.8rem Arial, Helvetica, sans-serif;
 	--button_bg: transparent;
-	--button_border: 2px solid light-dark(black, white);
+	--button_border: 1px solid light-dark(black, white);
 	--button_outline: 4px cornflowerblue solid;
 	--button_outline-offset: 6px;
 	--button_padding-block: 0.75rem;
-	--button_border-radius: 4px;
+	--button_border-radius: 2px;
+	--button_bg_checked: light-dark(black, white);
+	--button_color_checked: light-dark(white, black);
 	/* --button_border-radius: calc(var(--button_padding-block) * 2 + var(--line-height)); */
 
 	--button_padding-inline: 1rem;
 
 	/* Text inputs */
-	--text-input_font: 400 1rem/var(--line-height) Arial, Helvetica, sans-serif;
-	--text-input_bg: #343434;
-	--text-input_border: 2px solid light-dark(#dfdfdf, #787878);
+	--text-input_font: 400 1rem/var(--line-height) "SF Pro", "Roboto Flex", "Segoe UI Variable", Arial, Helvetica, sans-serif;
+	--text-input_bg: light-dark(#f0f0f0, #343434);
+	--text-input_border: 2px solid light-dark(#efefef, #787878);
+	--text-input_border: none;
 	--text-input_border-bottom: 2px solid light-dark(black, #909090);
 	--text-input_padding-inline: 0.5rem;
 	--text-input_padding-block: 0.25rem;
 	--text-input_outline: 1px;
 	--text-input_outline-offset: 0px;
-	--text-input_border-radius: 4px;
+	--text-input_border-radius: 2px;
 	--text-input_border-radius-bottom: 0px;
 
 
 	/* Number inputs */
-	--number-input_font: 400 1rem/var(--line-height) Arial, Helvetica, sans-serif;
+	--number-input_font: 400 1rem/var(--line-height)"SF Pro", "Roboto Flex", "Segoe UI Variable", Arial, Helvetica, sans-serif;
 	--number-input_bg: transparent;
 	--number-input_border: 2px solid light-dark(#dfdfdf, #787878);
 	--number-input_border-bottom: 2px solid light-dark(black, white);
@@ -95,7 +98,7 @@
 	--number-input_padding-block: 0.25rem;
 
 	/* Select */
-	--select_font: 400 0.95rem/0.95rem Arial, Helvetica, sans-serif;
+	--select_font: 400 0.95rem/0.95rem"SF Pro", "Roboto Flex", "Segoe UI Variable", Arial, Helvetica, sans-serif;
 	--select_bg: transparent;
 	--select_border: 1px solid light-dark(black, white);
 

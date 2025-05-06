@@ -6,6 +6,8 @@
 	font: var(--text-input_font);
 	border: none;
 	background: var(--text-input_bg, #232323);
+	border: var(--text-input_border);
+	border-radius: var(--text-input_border-radius);
 	border-bottom: var(--text-input_border-bottom);
 	cursor: initial;
 	padding-inline: var(--text-input_padding-inline);

@@ -11,24 +11,30 @@
 	border-radius: 3.7px;
 	background-color: var(--button_bg);
 	cursor: pointer;
+	font: var(--button_font);
 
-	&::after {
+	&::before {
 		position: absolute;
 		content: '';
 	}
 	&:hover {}
 	&:focus {
+		/* background-color: var(--checkbox_checked); */
 		outline: var(--button_outline);
 		outline-offset: var(--button_outline-offset);
 	}
 	&:active {}
 	&:checked {
 		/* background-color: darkgray; */
+		background: var(--button_bg_checked);
 	}
-	&:checked::after {
-		content: '\002714';
+	&:checked::before {
+		content: '\2714';
+		color: var(--button_color_checked);
 	}
-	&:indeterminate {}
+	&:indeterminate {
+		content: '\2014';
+	}
 	&:disabled {
 		cursor: not-allowed;
 	}

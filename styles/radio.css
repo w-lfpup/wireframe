@@ -25,7 +25,7 @@
 	&:active {}
 	&:checked {}
 	&:checked::after {
-		background-color: white;
+		background-color: var(--button_bg_checked);
 	}
 	&:disabled {
 		cursor: not-allowed;
