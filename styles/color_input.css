@@ -10,8 +10,8 @@ input[type=color] {
 
 	&:hover {}
 	&:focus {
-		outline: var(--button_outline);
-		outline-offset: var(--button_outline-offset);
+		outline: var(--outline);
+		outline-offset: var(--outline-offset);
 	}
 	&:active {}
 	&:disabled {

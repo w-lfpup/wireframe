@@ -3,36 +3,16 @@
 :root {
 	color-scheme: light dark;
 
-	/*
-		broad swath
-
-		dont forget gestault
-
-		correlate colors to state
-		disabled colors
-		invalid colors
-		focus colors
-		active colors
-		hover colors
-		outline covers
-
-		correlate shape and color to interactions
-		interaction colors
-		confirm / submit interaction colors
-		border-radius to distinct betweent pointer interactions, text number keyboard interactions
-
-		animation time
-	*/
-
 	/* debug */
 	--baseline-grid-color: light-dark(#a8a8a8, #343434);
 
 	/* Root */
-	--bg: light-dark(#f9f9f9, #17181A);
-	--transition-time: 30ms;
+	--background: light-dark(#f9f9f9, #17181A);
 	--line-height: 2rem;
 	--border-radius: 4px;
-	--border-radius-pill: 50%;
+	--outline: 4px solid cornflowerblue;
+	--outline-offset: 6px;
+	--transition-time: 30ms;
 
 	/* Typography */
 	--font: 400 1rem/var(--line-height)  "SF Pro", "Roboto Flex", "Segoe UI Variable", Arial, Helvetica, sans-serif;
@@ -63,8 +43,6 @@
 	--button_font: 100 0.8rem/0.8rem Arial, Helvetica, sans-serif;
 	--button_bg: transparent;
 	--button_border: 1px solid light-dark(black, white);
-	--button_outline: 4px cornflowerblue solid;
-	--button_outline-offset: 6px;
 	--button_padding-block: 0.75rem;
 	--button_border-radius: 2px;
 	--button_bg_checked: light-dark(black, white);
@@ -81,8 +59,6 @@
 	--text-input_border-bottom: 2px solid light-dark(black, #909090);
 	--text-input_padding-inline: 0.5rem;
 	--text-input_padding-block: 0.25rem;
-	--text-input_outline: 1px;
-	--text-input_outline-offset: 0px;
 	--text-input_border-radius: 2px;
 	--text-input_border-radius-bottom: 0px;
 
@@ -92,8 +68,6 @@
 	--number-input_bg: transparent;
 	--number-input_border: 2px solid light-dark(#dfdfdf, #787878);
 	--number-input_border-bottom: 2px solid light-dark(black, white);
-	--number-input_outline: 1px;
-	--number-input_outline-offset: 0px;
 	--number-input_padding-inline: 0.5rem;
 	--number-input_padding-block: 0.25rem;
 
@@ -110,8 +84,6 @@
 	--action_bg-4: #787878; /* checked state */
 	--border: 1px solid light-dark(black, white);
 	
-	/* Focus */
-	--outline: 4px solid cornflowerblue;
 
 	/* Baseline grid */
 	--baseline_line-height-2x: calc(var(--line-height) * 2);
