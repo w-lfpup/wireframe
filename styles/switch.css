@@ -8,7 +8,7 @@ input[type=checkbox][role=switch] {
 	font-size: 0.5em;
 	/* line-height: 1rem; */
 	cursor: pointer;
-	border: var(--button_border);
+	border: var(--press_border);
 	border-radius: 1.75rem;
 
 	&::before {
@@ -23,7 +23,7 @@ input[type=checkbox][role=switch] {
 		align-items: center;
 		inline-size: 0.5rem;
 		block-size: 0.5rem;
-		border: var(--button_border);
+		border: var(--press_border);
 		border-radius:  0.5rem;
 		margin-inline: calc((1.5rem - 0.5rem) * 0.5 - 2px);
 	}

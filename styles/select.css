@@ -1,8 +1,8 @@
 select{
 	background: none;
 	font: var(--select_font);
-	border: var(--button_border);
-	border-radius: var(--button_border-radius);
+	border: var(--press_border);
+	border-radius: var(--press_border-radius);
 	cursor: pointer;
 
 	padding-block: var(--button_padding-block);

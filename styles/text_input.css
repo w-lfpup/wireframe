@@ -8,7 +8,9 @@
 	background: var(--text-input_bg, #232323);
 	border: var(--text-input_border);
 	border-radius: var(--text-input_border-radius);
-	border-bottom: var(--text-input_border-bottom);
+	border-end-start-radius: var(--text-input_border-radius-bottom);
+	border-end-end-radius: var(--text-input_border-radius-bottom);
+	border-bottom: var(--text-input_border);
 	cursor: initial;
 	padding-inline: var(--text-input_padding-inline);
 	padding-block: var(--text-input_padding-block);

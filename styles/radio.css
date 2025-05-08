@@ -6,7 +6,7 @@
 	block-size: 1.25rem;
 	justify-content: center;
 	align-items: center;
-	border: var(--button_border);
+	border: var(--press_border);
 	border-radius: 50%;
 	box-sizing: content-box;
 	cursor: pointer;

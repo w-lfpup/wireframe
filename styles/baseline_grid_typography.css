@@ -1,3 +1,9 @@
+:root {
+		/* Baseline grid */
+		--baseline_line-height-2x: calc(var(--line-height) * 2);
+		--baseline_line-height-4x: calc(var(--line-height) * 4);
+}
+
 h1 {
 	line-height: var(--baseline_line-height-2x);
 	margin-block-start: calc((var(--baseline_line-height-2x) - 1cap) * 0.5);

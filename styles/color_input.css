@@ -2,8 +2,8 @@
 input[type=color] {
 	appearance: none;
 	/* background-color: var(--action_bg-1); */
-	border: var(--button_border);
-	border-radius: var(--button_border-radius, 10%);
+	border: var(--press_border);
+	border-radius: var(--press_border-radius, 10%);
 	padding: none;
 
 	cursor: pointer;

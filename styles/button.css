@@ -14,8 +14,8 @@
 	appearance: none;
 	background: var(--button_background);
 	font: var(--button_font);
-	border: var(--button_border);
-	border-radius: var(--button_border-radius, 10%);
+	border: var(--press_border);
+	border-radius: var(--press_border-radius, 10%);
 	padding-block: var(--button_padding-block, 0.25rem);
 	padding-inline: var(--button_padding-inline, 0.5rem);
 	cursor: pointer;
