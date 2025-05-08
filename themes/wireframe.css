@@ -19,20 +19,34 @@
 	/* Press actions */
 	--press_background: var(--background);
 	--press_color: light-dark(white, black);
-	--press_border: 2px solid light-dark(black, white);
+	--press_border-width: 2px;
+	--press_border: var(--press_border-width) solid light-dark(black, white);
 	--press_border-radius: 0.5lh;
 	--press_content_checked: '\2714';
 	--press_content_indeterminate: '\2014';
 	--press_font: 100 0.9rem/0.9rem var(--font-family);
+	--press_box-shadow: none;
+
+	--press_background_hover: var(--background);
+	--press_color_hover: var(--color);
+	--press_border_hover: var(--press_border-width) solid light-dark(black, white);
+	--press_box-shadow_hover: none;
 
 	--press_background_active: var(--background);
 	--press_color_active: var(--color);
-	--press_border_active: 2px solid light-dark(black, white);
+	--press_border_active: var(--press_border-width) solid light-dark(black, white);
+	--press_box-shadow_active: none;
+
 	--press_background_checked: light-dark(black, white);
-	--press_border_checked: 2px solid light-dark(black, white);
-	--press_background_disabled: var(--background);
+	--press_color_checked: var(--color);
+	--press_border_checked: var(--press_border-width) solid light-dark(black, white);
+	--press_box-shadow_checked: none;
+
+	--press_background_diabled: light-dark(black, white);
 	--press_color_disabled: var(--color);
-	--press_border_disabled: 2px solid light-dark(black, white);
+	--press_border_disabled: var(--press_border-width) solid light-dark(black, white);
+	--press_box-shadow_disabled: none;
+
 
 	/* Checkbox */
 	--checkbox_block-size: 1.25rem;

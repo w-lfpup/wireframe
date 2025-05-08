@@ -22,7 +22,12 @@
 		content: '';
 	}
 
-	&:hover {}
+	&:hover {
+		background: var(--press_background_hover);
+		color: var(--press_color_hover);
+		border: var(--press_border_hover);
+		box-shadow: var(--press_box-shadow_hover);
+	}
 
 	&:focus {
 		outline: var(--outline);
@@ -33,7 +38,6 @@
 		background: var(--press_background_active);
 		color: var(--press_color_active);
 		border: var(--press_border_active);
-		color: var(--press_color_disabled);
 		box-shadow: var(--press_box-shadow_active);
 	}
 
