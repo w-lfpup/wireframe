@@ -4,7 +4,7 @@
 	appearance: none;
 	font: var(--number-input_font);
 	border: none;
-	background: var(--text-input_background, #343434);
+	background: var(--number-input_background, #343434);
 	border-bottom: var(--text-input_border-bottom);
 	cursor: text;
 	padding-inline: var(--number-input_padding-inline);

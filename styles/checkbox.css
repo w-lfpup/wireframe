@@ -15,6 +15,8 @@
 	border: var(--press_border);
 	border-radius: calc(var(--press_border-radius) * 0.5);
 	box-shadow: var(--press_box-shadow);
+	outline: var(--outline);
+	outline-offset: var(--outline-offset);
 	transition: all var(--transition-time);
 
 	&::before {
@@ -22,6 +24,7 @@
 		content: '';
 	}
 
+	/* hover involves being checked or not, they are different */
 	&:hover {
 		background: var(--press_background_hover);
 		color: var(--press_color_hover);
@@ -30,8 +33,8 @@
 	}
 
 	&:focus {
-		outline: var(--outline);
-		outline-offset: var(--outline-offset);
+		outline: var(--outline_focus);
+		outline-offset: var(--outline-offset_focus);
 	}
 
 	&:active {
