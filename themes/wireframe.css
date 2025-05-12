@@ -56,6 +56,8 @@
 	--checkbox_block-size: 1.25rem;
 	--checkbox_inline-size: 1.25rem;
 
+	/* Radio */
+
 	/* Typography */
 	--h1_font: 700 4rem/4rem var(--font-family);
 	--h1_color: var(--color);
