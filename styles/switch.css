@@ -29,8 +29,8 @@ input[type=checkbox][role=switch] {
 	}
 	&:hover {}
 	&:focus {
-		outline: var(--outline);
-		outline-offset: var(--outline-offset);
+		outline: var(--outline_focus);
+		outline-offset: var(--outline-offset_focus);
 	}
 	&:active {}
 	&:checked::before {

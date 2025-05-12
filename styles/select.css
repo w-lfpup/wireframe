@@ -1,18 +1,24 @@
-select{
-	background: none;
-	font: var(--select_font);
+select {
+	appearance: none;
+	appearance: select;
+	appearance: base-select;
+
+	background: transparent;
+	font: var(--button_font);
 	border: var(--press_border);
 	border-radius: var(--press_border-radius);
 	cursor: pointer;
 
-	padding-block: var(--button_padding-block);
-	padding-inline: var(--button_padding-inline);
+	border-radius: var(--press_border-radius, 10%);
+	padding-block: var(--button_padding-block, 0.5rem);
+	padding-inline: var(--button_padding-inline, 0.5rem);
 
-	
+	overflow: visible;
+
 	&:hover {}
 	&:focus {
-		outline: var(--outline);
-		outline-offset: var(--outline-offset);
+		outline: var(--outline_focus);
+		outline-offset: var(--outline-offset_focus);
 	}
 	&:active {}
 	&:disabled {
@@ -20,12 +26,6 @@ select{
 	}
 }
 
-
-select option {
-	appearance: none;
-	/* font: var(--select_font); */
-	background: var(--text-input_bg);
-	color: var(--color);
-	padding-block: var(--button_padding-block);
-	padding-inline: var(--button_padding-inline);
+option {
+	overflow: visible;
 }

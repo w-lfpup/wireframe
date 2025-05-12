@@ -61,20 +61,20 @@
 	--h1_color: var(--color);
 	--h2_font: 700 3rem/3rem var(--font-family);
 	--h2_color: var(--color);
-	--h3_font: 700 2.25rem/2.25rem var(--font-family);
+	--h3_font: 700 2.4rem/3rem var(--font-family);
 	--h3_color: var(--color);
-	--h4_font: 700 1.75rem/1.75rem var(--font-family);
+	--h4_font: 700 1.75rem/2rem var(--font-family);
 	--h4_color: var(--color);
-	--h5_font: 700 1.25rem/1.25rem var(--font-family);
+	--h5_font: 700 1.25rem/2rem var(--font-family);
 	--h5_color: var(--color);
-	--h6_font: 700 1rem/1rem var(--font-family);
+	--h6_font: 700 1rem/2rem var(--font-family);
 	--h6_color: var(--color);
 	/* -webkit-text-stroke */
 	/* text-shadow */
 
 
 	/* Buttons */
-	--button_font: 700 0.9rem/0.9rem Arial, Helvetica, sans-serif;
+	--button_font: 700 0.9rem/1rem Arial, Helvetica, sans-serif;
 	--button_bg: transparent;
 	--button_padding-block: 0.75rem;
 

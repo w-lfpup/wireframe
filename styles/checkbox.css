@@ -2,7 +2,6 @@
 	appearance: none;
 	position: relative;
 	display: inline-flex;
-	block-size: 1.25rem;
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
@@ -13,18 +12,18 @@
 	background: var(--press_background);
 	color: var(--press_color);
 	border: var(--press_border);
-	border-radius: calc(var(--press_border-radius) * 0.5);
+	border-radius: calc(0.5 * var(--press_border-radius));
 	box-shadow: var(--press_box-shadow);
 	outline: var(--outline);
 	outline-offset: var(--outline-offset);
 	transition: all var(--transition-time);
+	opacity: var(--press_opacity);
 
 	&::before {
 		position: absolute;
 		content: '';
 	}
 
-	/* hover involves being checked or not, they are different */
 	&:hover {
 		background: var(--press_background_hover);
 		color: var(--press_color_hover);
@@ -55,14 +54,16 @@
 	}
 
 	&:indeterminate {
-		content: var(--press_indeterminate_checked);
+		content: var(--press_content_indeterminate);
 	}
 
 	&:disabled {
 		cursor: not-allowed;
+		
 		background: var(--press_background_disabled);
 		color: var(--press_color_disabled);
 		border: var(--press_border_disabled);
 		box-shadow: var(--press_box-shadow_disabled);
+		opacity: var(--press_opacity_disabled);
 	}
 }

@@ -1,38 +1,23 @@
-/* does css nesting provide a more concise sytnax for states? */
-/*
-	What does a button need?
-	--outline / _hover / _focus / _active / _disabled
-	--border
-	--background
-	--padding
-	--font
-	--opacicty
-	--box-shadow
-*/
-
 :is(button, input[type=button]) {
 	appearance: none;
+	cursor: pointer;
+
 	background: var(--button_background);
 	font: var(--button_font);
 	border: var(--press_border);
 	border-radius: var(--press_border-radius, 10%);
 	padding-block: var(--button_padding-block, 0.25rem);
 	padding-inline: var(--button_padding-inline, 0.5rem);
-	cursor: pointer;
 
 	&:hover {}
 	&:focus {
-		outline: var(--outline);
-		outline-offset: var(--outline-offset);
+		outline: var(--outline_focus);
+		outline-offset: var(--outline-offset_focus);
 	}
 	&:active {}
 	&:disabled {
 		cursor: not-allowed;
+
 		opacity: var(--button_opacity_disabled, 0.5);
 	}
 }
-
-
-/* file selector button */
-
-/* color */

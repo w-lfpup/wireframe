@@ -1,47 +1,47 @@
 :root {
-		/* Baseline grid */
-		--baseline_line-height-2x: calc(var(--line-height) * 2);
-		--baseline_line-height-4x: calc(var(--line-height) * 4);
+	--baseline_line-height-2x: calc(var(--line-height) * 2);
+	--baseline_line-height-4x: calc(var(--line-height) * 4);
 }
 
 h1 {
 	line-height: var(--baseline_line-height-2x);
-	margin-block-start: calc((var(--baseline_line-height-2x) - 1cap) * 0.5);
+	padding-block-start: calc((var(--baseline_line-height-2x) - 1cap) * 0.5);
 	margin-block-end: calc((var(--baseline_line-height-2x) - 1cap) * -0.5);
 }
 
 h2 {
 	line-height: var(--baseline_line-height-2x);
-	margin-block-start: calc((var(--baseline_line-height-2x) - 1cap) * 0.5);
+	padding-block-start: calc((var(--baseline_line-height-2x) - 1cap) * 0.5);
 	margin-block-end: calc((var(--baseline_line-height-2x) - 1cap) * -0.5);
 }
 
 h3 {
 	line-height: var(--baseline_line-height-2x);
-	margin-block-start: calc((var(--baseline_line-height-2x) - 1cap) * 0.5);
+	padding-block-start: calc((var(--baseline_line-height-2x) - 1cap) * 0.5);
 	margin-block-end: calc((var(--baseline_line-height-2x) - 1cap) * -0.5);
 }
 
 h4 {
 	line-height: var(--line-height);
-	margin-block-start: calc((var(--line-height) - 1cap) * 0.5);
+	padding-block-start: calc((var(--line-height) - 1cap) * 0.5);
 	margin-block-end: calc((var(--line-height) - 1cap) * -0.5);
 }
 
 h5 {
 	line-height: var(--line-height);
-	margin-block-start: calc((var(--line-height) - 1cap) * 0.5);
+	padding-block-start: calc((var(--line-height) - 1cap) * 0.5);
 	margin-block-end: calc((var(--line-height) - 1cap) * -0.5);
 }
 
 h6 {
 	line-height: var(--line-height);
-	margin-block-start: calc((var(--line-height) - 1cap) * 0.5);
+	padding-block-start: calc((var(--line-height) - 1cap) * 0.5);
 	margin-block-end: calc((var(--line-height) - 1cap) * -0.5);
 }
 
 p {
-	margin-block-start: calc((var(--line-height) - 1cap) * 0.5);
+	line-height: var(--line-height);
+	padding-block-start: calc((var(--line-height) - 1cap) * 0.5);
 	margin-block-end: calc((var(--line-height) - 1cap) * -0.5);
 }
 
@@ -53,14 +53,14 @@ input[type=text], input[type=password], input[type=email] {
 	font-size: 1rem;
 
 	/* font size - capsize - padding */
-	margin-block-start: calc(((1rem - 1cap) * 1) - 0.25rem);
+	padding-block-start: calc(((1rem - 1cap) * 1) - 0.25rem);
 	margin-block-end: calc(((1rem - 1cap) * -1) - 0.25rem);
 }
 
 input[type=time] {
 	block-size: 2rem;
 	font-size: 1rem;
-	margin-block-start: calc((1cap));
+	padding-block-start: calc((1cap));
 	margin-block-end: calc( -1 * (1cap));
 	border: none;
 }
@@ -68,7 +68,7 @@ input[type=time] {
 input[type=date] {
 	block-size: 2rem;
 	font-size: 1rem;
-	margin-block-start: calc((1em - 1cap));
+	padding-block-start: calc((1em - 1cap));
 	margin-block-end: calc( -1 * (1em - 1cap));
 	border: none;
 }
@@ -77,6 +77,6 @@ input[type=file] {
 	line-height: var(--line-height);
 	font-size: 1rem;
 	
-	margin-block-start: calc((1em - 1cap));
+	padding-block-start: calc((1em - 1cap));
 	margin-block-end: calc( -1 * (1em - 1cap));
 }

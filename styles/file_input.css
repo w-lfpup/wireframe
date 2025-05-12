@@ -1,4 +1,4 @@
-input[type=file] {
+:is(input[type=file]) {
 	appearance: none;
 	font: var(--font);
 	color: var(--color);
@@ -7,6 +7,15 @@ input[type=file] {
 
 	&:disabled {
 		cursor: not-allowed;
+	}
+
+	&:focus {
+		outline: none;
+
+		&::file-selector-button {
+			outline: var(--outline_focus);
+			outline-offset: var(--outline-offset_focus);
+		}
 	}
 }
 
