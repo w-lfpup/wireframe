@@ -31,14 +31,14 @@
 	}
 
 	&:active {
+		inset-block-start: var(--button_inset-block-start_active, --button_inset-block-start);
+		inset-inline-start: var(--button_inset-inline-start_active, --button_inset-inline-start);
 		background: var(--press_background_active, --press_background);
 		color: var(--press_color_active, --press_color);
 		border: var(--press_border_active, --press_border);
 		box-shadow: var(--press_box-shadow_active, --press_box-shadow);
 		outline: var(--outline_active, --outline);
 		outline-offset: var(--outline-offset_active, --outline-offset);
-		inset-block-start: var(--button_inset-block-start_active, --button_inset-inline-start_active);
-		inset-inline-start: var(--button_inset-inline-start_active, --button_inset-inline-start_active);
 	}
 
 	&:disabled {
