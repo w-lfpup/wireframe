@@ -8,9 +8,7 @@ A design system should focus on a the physical relationship a person has to an "
 
 Components should be built using first principals of a target platform; in this case, for the web.
 
-2d planar surfaces are best served by fundamentals of print media instead of the current neo-skeumorphism zeitgeist in th 2020s.
-
-In a way, it's a 'wireframe' developers can use to model their own resilient, mission critical UIs for the web
+It's a 'wireframe' developers can use to model their own resilient, mission critical web UIs.
 
 ## License
 
