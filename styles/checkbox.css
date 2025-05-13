@@ -1,19 +1,68 @@
 :is(input[type=checkbox]) {
 	appearance: none;
-	inline-size: 1.25rem;
-	block-size: 1.25rem;
-	background-color: var(--action_bg-0);
-	border: none;
-	border: var(--button_border);
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
 	cursor: pointer;
 
-	&:hover {}
-	&:focus {}
-	&:active {}
-	&:checked {
-		background-color: darkgray;
+	block-size: var(--checkbox_block-size);
+	inline-size: var(--checkbox_inline-size);
+	font: var(--press_font);
+	background: var(--press_background);
+	color: var(--checkbox_color);
+	border: var(--press_border);
+	border-radius: calc(0.5 * var(--press_border-radius));
+	box-shadow: var(--press_box-shadow);
+	outline: var(--outline);
+	outline-offset: var(--outline-offset);
+	transition: all var(--transition-time);
+	opacity: var(--press_opacity);
+
+	&::before {
+		position: absolute;
+		content: var(--press_content_checked);
 	}
+
+	&:indeterminate {
+		content: var(--press_content_indeterminate);
+	}
+
+	&:hover {
+		background: var(--press_background_hover);
+		border: var(--press_border_hover);
+		box-shadow: var(--press_box-shadow_hover);
+	}
+
+	&:active {
+		background: var(--press_background_active);
+		color: var(--press_color_active);
+		border: var(--press_border_active);
+		box-shadow: var(--press_box-shadow_active);
+	}
+
+	&:checked {
+		background: var(--press_background_checked);
+		border: var(--press_border_checked);
+		box-shadow: var(--press_box-shadow_checked);
+
+		&::before {
+			color: var(--press_color_checked);
+		}
+	}
+
+	&:focus {
+		outline: var(--outline_focus);
+		outline-offset: var(--outline-offset_focus);
+	}
+
 	&:disabled {
 		cursor: not-allowed;
+		
+		background: var(--press_background_disabled);
+		color: var(--press_color_disabled);
+		border: var(--press_border_disabled);
+		box-shadow: var(--press_box-shadow_disabled);
+		opacity: var(--press_opacity_disabled);
 	}
 }

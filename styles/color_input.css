@@ -1,11 +1,19 @@
 /* places for fonts and line heights */
 input[type=color] {
 	appearance: none;
-	background-color: var(--action_bg-1);
-	border: var(--button_border);
+	border: var(--press_border);
+	border-radius: var(--press_border-radius, 10%);
+	padding: none;
+
+	cursor: pointer;
 
 	&:hover {}
-	&:focus {}
+	&:focus {
+		outline: var(--outline_focus);
+		outline-offset: var(--outline-offset_focus);
+	}
 	&:active {}
-	&:disabled {}
+	&:disabled {
+		cursor: not-allowed;
+	}
 }

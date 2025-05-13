@@ -1,5 +1,7 @@
 /* color */
-::-moz-color-swatch {}
+::-moz-color-swatch {
+	border: none;
+}
 
 
 /* meter */
@@ -9,3 +11,4 @@
 ::-moz-range-progress {}
 ::-moz-range-thumb {}
 ::-moz-range-track {}
+

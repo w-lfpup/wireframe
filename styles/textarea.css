@@ -5,9 +5,21 @@ textarea {
 	font: var(--text-input_font);
 	border: var(--text-input_border);
 	border-bottom: var(--text-input_border-bottom);
+	cursor: initial;
+	min-inline-size: 225px;
+	min-block-size: calc(var(--line-height) * 2);
+	border: none;
+	background: var(--text-input_background, #343434);
+	border-bottom: var(--text-input_border-bottom);
+	field-sizing: content;
 
 	&:hover {}
-	&:focus {}
+	&:focus {
+		outline: var(--outline_focus);
+		outline-offset: var(--outline-offset_focus);
+	}
 	&:active {}
-	&:disabled {}
+	&:disabled {
+		cursor: not-allowed;
+	}
 }

@@ -2,13 +2,22 @@
 /* places for fonts and line heights */
 :is(input[type=time], input[type=date], input[type=datetime-local], input[type=number], input[type=phone]) {
 	appearance: none;
-	background: var(--number-input_bg);
 	font: var(--number-input_font);
-	border: var(--number-input_border);
-	border-bottom: var(--number-input_border-bottom);
+	border: none;
+	background: var(--number-input_background);
+	border-bottom: var(--text-input_border-bottom);
+	cursor: text;
+	padding-inline: var(--number-input_padding-inline);
+	padding-block: var(--number-input_padding-block);
+	color: var(--color);
 
 	&:hover {}
-	&:focus {}
+	&:focus {
+		outline: var(--outline_focus);
+		outline-offset: var(--outline-offset_focus);
+	}
 	&:active {}
-	&:disabled {}
+	&:disabled {
+		cursor: not-allowed;
+	}
 }

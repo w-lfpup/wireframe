@@ -1,7 +1,31 @@
-select{
-	/* appearance: none; */
-	display: inline-block;
-	background: var(--action_bg-1);
-	font: var(--select_font);
-	border: var(--select_border);
+select {
+	appearance: none;
+	appearance: select;
+	appearance: base-select;
+
+	background: transparent;
+	font: var(--button_font);
+	border: var(--press_border);
+	border-radius: var(--press_border-radius);
+	cursor: pointer;
+
+	border-radius: var(--press_border-radius, 10%);
+	padding-block: var(--button_padding-block, 0.5rem);
+	padding-inline: var(--button_padding-inline, 0.5rem);
+
+	overflow: visible;
+
+	&:hover {}
+	&:focus {
+		outline: var(--outline_focus);
+		outline-offset: var(--outline-offset_focus);
+	}
+	&:active {}
+	&:disabled {
+		cursor: not-allowed;
+	}
+}
+
+option {
+	overflow: visible;
 }

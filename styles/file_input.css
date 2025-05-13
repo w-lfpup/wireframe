@@ -1,18 +1,37 @@
-input[type=file] {
+:is(input[type=file]) {
 	appearance: none;
-	position:relative;
-	cursor: pointer;
 	font: var(--font);
 	color: var(--color);
-	/* doesn't make sense yet */
-	margin: -4px;
-	padding: 4px;
+	cursor: pointer;
+	
+
+	&:disabled {
+		cursor: not-allowed;
+	}
+
+	&:focus {
+		outline: none;
+
+		&::file-selector-button {
+			outline: var(--outline_focus);
+			outline-offset: var(--outline-offset_focus);
+		}
+	}
 }
 
 ::file-selector-button  {
-	background-color: var(--action_bg-1);
+	background-color: var(--button_bg);
 	font: var(--button_font);
-	border: var(--button_border);
+	border: var(--press_border);
+	appearance: none;
+	background: var(--button_background);
+	font: var(--button_font);
+	border: var(--press_border);
+	border-radius: var(--press_border-radius, 10%);
+	padding-block: var(--button_padding-block, 0.25rem);
+	padding-inline: var(--button_padding-inline, 0.5rem);
+	cursor: pointer;
+	margin-inline-end: 1.5rem;
 }
 
 /* :focus-within::file-selector-button, :focus::file-selector-button {
