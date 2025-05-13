@@ -52,11 +52,10 @@
 		background: var(--press_background_checked);
 		border: var(--press_border_checked);
 		box-shadow: var(--press_box-shadow_checked);
-	}
 
-	&:checked::before {
-		/* radio island background */
-		background: var(--press_background);
+		&::before {
+			background: var(--press_background);
+		}
 	}
 
 	&:disabled {

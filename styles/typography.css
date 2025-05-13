@@ -34,6 +34,6 @@ h6 {
 }
 
 ::selection {
-	background-color: var(--selection_bg-color);
+	background-color: var(--selection_background-color);
 	color: var(--selection_color);
 }

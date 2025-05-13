@@ -5,7 +5,7 @@
 	display:inline-flex;
 	font: var(--text-input_font);
 	border: none;
-	background: var(--text-input_bg, #232323);
+	background: var(--text-input_background);
 	border: var(--text-input_border);
 	border-radius: var(--text-input_border-radius);
 	border-end-start-radius: var(--text-input_border-radius-bottom);

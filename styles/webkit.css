@@ -21,4 +21,6 @@
 }
 
 ::-webkit-color-swatch {}
-::-webkit-datetime-edit-fields-wrapper {}
+::-webkit-datetime-edit {
+	color: var(--color);
+}

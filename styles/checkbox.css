@@ -10,7 +10,7 @@
 	inline-size: var(--checkbox_inline-size);
 	font: var(--press_font);
 	background: var(--press_background);
-	color: var(--press_color);
+	color: var(--checkbox_color);
 	border: var(--press_border);
 	border-radius: calc(0.5 * var(--press_border-radius));
 	box-shadow: var(--press_box-shadow);
@@ -21,19 +21,17 @@
 
 	&::before {
 		position: absolute;
-		content: '';
+		content: var(--press_content_checked);
+	}
+
+	&:indeterminate {
+		content: var(--press_content_indeterminate);
 	}
 
 	&:hover {
 		background: var(--press_background_hover);
-		color: var(--press_color_hover);
 		border: var(--press_border_hover);
 		box-shadow: var(--press_box-shadow_hover);
-	}
-
-	&:focus {
-		outline: var(--outline_focus);
-		outline-offset: var(--outline-offset_focus);
 	}
 
 	&:active {
@@ -47,14 +45,15 @@
 		background: var(--press_background_checked);
 		border: var(--press_border_checked);
 		box-shadow: var(--press_box-shadow_checked);
+
+		&::before {
+			color: var(--press_color_checked);
+		}
 	}
 
-	&:checked::before {
-		content: var(--press_content_checked);
-	}
-
-	&:indeterminate {
-		content: var(--press_content_indeterminate);
+	&:focus {
+		outline: var(--outline_focus);
+		outline-offset: var(--outline-offset_focus);
 	}
 
 	&:disabled {
