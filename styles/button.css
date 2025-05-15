@@ -21,13 +21,14 @@
 		color: var(--press_color_hover, --press_color);
 		border: var(--press_border_hover, --press_border);
 		box-shadow: var(--press_box-shadow_hover, --press_box-shadow);
+		
 		outline: var(--outline_hover, --outline);
 		outline-offset: var(--outline-offset_hover, --outline-offset);
 	}
 
 	&:focus {
-		outline: var(--outline_focus, --outline);
-		outline-offset: var(--outline-offset_focus, --outline-offset);
+		outline: var(--outline_focus, --outline_hover);
+		outline-offset: var(--outline-offset_focus, --outline-offset_hover);
 	}
 
 	&:active {
@@ -37,8 +38,9 @@
 		color: var(--press_color_active, --press_color);
 		border: var(--press_border_active, --press_border);
 		box-shadow: var(--press_box-shadow_active, --press_box-shadow);
-		outline: var(--outline_active, --outline);
-		outline-offset: var(--outline-offset_active, --outline-offset);
+
+		outline: var(--outline_active, --outline_focus);
+		outline-offset: var(--outline-offset_active, --outline-offset_focus);
 	}
 
 	&:disabled {
@@ -49,5 +51,8 @@
 		border: var(--press_border_disabled, --press_border);
 		box-shadow: var(--press_box-shadow_disabled, --press_box-shadow);
 		opacity: var(--press_opacity_disabled, --press_opacity);
+
+		outline: var(--outline);
+		outline-offset: var(--outline-offset);		
 	}
 }

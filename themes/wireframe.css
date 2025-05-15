@@ -6,7 +6,6 @@
 
 	/* Root */
 	--background: light-dark(#f9f9f9, #17181A);
-	--font: 400 1rem/var(--line-height) var(--font-family);
 	--color: light-dark(#3e3e3e, white);
 	--color-invert: light-dark(white, #3e3e3e);
 	--line-height: 2rem;
@@ -18,8 +17,12 @@
 	--selection_color: light-dark(white, black);
 	--outline: 4px solid transparent;
 	--outline-offset: 8px;
+	--outline_hover: 4px solid hsl(205, 79%, 66%);
+	--outline-offset_hover: 8px;
 	--outline_focus: 4px solid var(--selection_background-color);
 	--outline-offset_focus: 8px;
+	--outline_active: 4px solid var(--selection_background-color);
+	--outline-offset_active: 8px;
 
 	/* Press actions */
 	--press_background: var(--background);
@@ -44,7 +47,7 @@
 	--press_box-shadow_active: none;
 
 	--press_background_checked: light-dark(black, white);
-	--press_color_checked: var(--color-invert);
+	--press_color_checked: var(--press_color);
 	--press_border_checked: var(--press_border-width) solid light-dark(black, white);
 	--press_box-shadow_checked: none;
 
@@ -56,23 +59,25 @@
 	/* Checkbox */
 	--checkbox_block-size: 1.25rem;
 	--checkbox_inline-size: 1.25rem;
-	--checkbox_color: #00000000;
+	--checkbox_color: transparent;
 
 	/* Radio */
 
 	/* Typography */
-	--h1_font: 700 4rem/4rem var(--font-family);
+	--font: 400 1rem/var(--line-height) var(--font-family);
+	--h1_font: 700 6rem/6rem var(--font-family);
 	--h1_color: var(--color);
-	--h2_font: 700 3rem/3rem var(--font-family);
+	--h2_font: 700 5rem/5rem var(--font-family);
 	--h2_color: var(--color);
-	--h3_font: 700 2.5rem/2.5rem var(--font-family);
+	--h3_font: 700 4rem/4rem var(--font-family);
 	--h3_color: var(--color);
-	--h4_font: 700 1.75rem/1.75rem var(--font-family);
+	--h4_font: 700 3rem/3rem var(--font-family);
 	--h4_color: var(--color);
-	--h5_font: 700 1.25rem/1.25rem var(--font-family);
+	--h5_font: 700 2rem/2rem var(--font-family);
 	--h5_color: var(--color);
-	--h6_font: 700 1rem/1rem var(--font-family);
+	--h6_font: 700 1rem/2rem var(--font-family);
 	--h6_color: var(--color);
+	
 	/* -webkit-text-stroke */
 	/* text-shadow */
 

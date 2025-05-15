@@ -1,22 +1,23 @@
 /* wireframe component styles */
-@import "../styles/debug.css";
+@import "debug.css";
 
 /* Spacing, grids, typography */
-@import "../styles/baseboard.css";
-@import "../styles/typography.css";
+@import "baseboard.css";
+@import "typography.css";
+/* @import "focus.css"; */
 
 /* Components */
-@import "../styles/button.css";
-@import "../styles/checkbox.css";
-@import "../styles/radio.css";
-@import "../styles/switch.css";
-@import "../styles/text_input.css";
-@import "../styles/number_input.css";
-@import "../styles/color_input.css";
-@import "../styles/file_input.css";
-@import "../styles/textarea.css";
-@import "../styles/select.css";
+@import "button.css";
+@import "checkbox.css";
+@import "radio.css";
+@import "switch.css";
+@import "text_input.css";
+@import "number_input.css";
+@import "color_input.css";
+@import "file_input.css";
+@import "textarea.css";
+@import "select.css";
 
 /* Browser prefixes awaiting standardization / deprecation */
-@import "../styles/webkit.css";
-@import "../styles/mozilla.css";
+@import "webkit.css";
+@import "mozilla.css";
