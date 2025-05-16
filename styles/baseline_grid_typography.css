@@ -1,18 +1,18 @@
 :root {
 	--baseline_line-height-2x: calc(var(--line-height) * 2);
-	--baseline_line-height-4x: calc(var(--line-height) * 4);
+	--baseline_line-height-3x: calc(var(--line-height) * 3);
 }
 
 h1 {
-	line-height: var(--baseline_line-height-2x);
-	padding-block-start: calc((var(--baseline_line-height-2x) - 1cap) * 0.5);
-	margin-block-end: calc((var(--baseline_line-height-2x) - 1cap) * -0.5);
+	line-height: var(--baseline_line-height-3x);
+	padding-block-start: calc((var(--baseline_line-height-3x) - 1cap) * 0.5);
+	margin-block-end: calc((var(--baseline_line-height-3x) - 1cap) * -0.5);
 }
 
 h2 {
-	line-height: var(--baseline_line-height-2x);
-	padding-block-start: calc((var(--baseline_line-height-2x) - 1cap) * 0.5);
-	margin-block-end: calc((var(--baseline_line-height-2x) - 1cap) * -0.5);
+	line-height: var(--baseline_line-height-3x);
+	padding-block-start: calc((var(--baseline_line-height-3x) - 1cap) * 0.5);
+	margin-block-end: calc((var(--baseline_line-height-3x) - 1cap) * -0.5);
 }
 
 h3 {
@@ -22,9 +22,9 @@ h3 {
 }
 
 h4 {
-	line-height: var(--line-height);
-	padding-block-start: calc((var(--line-height) - 1cap) * 0.5);
-	margin-block-end: calc((var(--line-height) - 1cap) * -0.5);
+	line-height: var(--baseline_line-height-2x);
+	padding-block-start: calc((var(--baseline_line-height-2x) - 1cap) * 0.5);
+	margin-block-end: calc((var(--baseline_line-height-2x) - 1cap) * -0.5);
 }
 
 h5 {
