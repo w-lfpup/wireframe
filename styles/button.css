@@ -34,6 +34,7 @@
 	&:active {
 		inset-block-start: var(--button_inset-block-start_active, --button_inset-block-start);
 		inset-inline-start: var(--button_inset-inline-start_active, --button_inset-inline-start);
+		
 		background: var(--press_background_active, --press_background);
 		color: var(--press_color_active, --press_color);
 		border: var(--press_border_active, --press_border);

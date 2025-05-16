@@ -25,6 +25,7 @@
 	&::before {
 		content: '';
 		/* --radio-island-size */
+		display: block;
 		inline-size: 0.6rem;
 		block-size: 0.6rem;
 		border-radius: 50%;

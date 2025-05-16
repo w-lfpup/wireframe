@@ -36,10 +36,6 @@
 			color: var(--press_color_hover, --press_color);
 		}
 
-		&:active {
-			color: var(--press_color_active, --press_color);
-		}
-
 		&:disabled {
 			color: var(--press_color_disabled, --press_color);
 		}
