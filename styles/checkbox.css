@@ -12,14 +12,13 @@
 	background: var(--press_background);
 	color: var(--checkbox_color, var(--press-color));
 	border: var(--press_border);
-	border-radius: calc(0.5 * var(--press_border-radius, 0));
+	border-radius: calc(0.5 * var(--press_border-radius));
 	box-shadow: var(--press_box-shadow);
 
 	outline: var(--outline);
 	outline-offset: var(--outline-offset);
 	
 	transition: all var(--transition-time);
-	opacity: var(--press_opacity);
 
 	&::before {
 		content: var(--press_content_checked);

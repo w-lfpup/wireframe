@@ -2,7 +2,7 @@
 	color-scheme: light dark;
 
 	/* debug */
-	--baseline-grid-color: light-dark(#a8a8a8, #343434);
+	--baseline-grid-color: light-dark(#cfcfcf, #787878);
 
 	/* Root */
 	--background: light-dark(#f9f9f9, #17181A);
@@ -10,11 +10,12 @@
 	--color-invert: light-dark(white, #3e3e3e);
 	--line-height: 2rem;
 	--font-family: system-ui, "SF Pro", "San Francisco", "Roboto Flex", "Segoe UI Variable", Helvetica, sans-serif;
-	--transition-time: 30ms;
+	--transition-time: 250ms;
 
 	/* Focus & Selection */
 	--selection_background-color: light-dark(cornflowerblue, cornflowerblue);
 	--selection_color: light-dark(white, black);
+
 	--outline: 4px solid transparent;
 	--outline-offset: 8px;
 	--outline_hover: 4px solid hsl(205, 79%, 66%);
@@ -98,6 +99,7 @@
 	--text-input_font: 400 1rem/var(--line-height) var(--font-family)
 	--text-input_background: light-dark(white, black);
 	--text-input_border: 2px solid light-dark(black, white);
+
 	--text-input_border-bottom: 2px solid light-dark(black, white);
 	--text-input_padding-inline: 0.5rem;
 	--text-input_padding-block: 0.25rem;
@@ -112,9 +114,9 @@
 	--number-input_border-bottom: 2px solid light-dark(black, white);
 	--number-input_padding-inline: 0.5rem;
 	--number-input_padding-block: 0.25rem;
+	--number-input_border-radius: 1px;
+	--number-input_border-radius-bottom: 1px;
 
 	/* Select */
-	--select_font: 400 0.95rem/1rem var(--font-family)
-	--select_bg: transparent;
-	--select_border: 1px solid light-dark(black, white);
+
 }

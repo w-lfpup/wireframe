@@ -1,6 +1,6 @@
 :root {
 	--baseline_line-height-2x: calc(var(--line-height) * 2);
-	--baseline_line-height-4x: calc(var(--line-height) * 4);
+	--baseline_line-height-4x: calc(var(--line-height) * 3);
 }
 
 h1 {

@@ -1,12 +1,11 @@
 :is(button, input[type=button]) {
 	appearance: none;
-
 	cursor: pointer;
 	position: relative;
 	display: inline-flex;
 
 	background: var(--press_background);
-	font: var(--button_font, var(--press-font));
+	font: var(--button_font, var(--press_font));
 	border: var(--press_border);
 	border-radius: var(--press_border-radius);
 	padding-block: var(--button_padding-block);
