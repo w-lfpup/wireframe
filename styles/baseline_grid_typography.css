@@ -1,6 +1,7 @@
 :root {
 	--baseline_line-height-2x: calc(var(--line-height) * 2);
-	--baseline_line-height-4x: calc(var(--line-height) * 3);
+	--baseline_line-height-3x: calc(var(--line-height) * 3);
+	--baseline_line-height-4x: calc(var(--line-height) * 4);
 }
 
 h1 {
@@ -10,9 +11,9 @@ h1 {
 }
 
 h2 {
-	line-height: var(--baseline_line-height-4x);
-	padding-block-start: calc((var(--baseline_line-height-4x) - 1cap) * 0.5);
-	margin-block-end: calc((var(--baseline_line-height-4x) - 1cap) * -0.5);
+	line-height: var(--baseline_line-height-3x);
+	padding-block-start: calc((var(--baseline_line-height-3x) - 1cap) * 0.5);
+	margin-block-end: calc((var(--baseline_line-height-3x) - 1cap) * -0.5);
 }
 
 h3 {

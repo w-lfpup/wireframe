@@ -17,6 +17,7 @@
 	padding-inline: var(--number-input_padding-inline);
 	padding-block: var(--number-input_padding-block);
 	color: var(--color);
+	transition: all var(--transition-time);
 
 	&:hover {
 		border: var(--number-input_border_hover, var(--number-input_border));

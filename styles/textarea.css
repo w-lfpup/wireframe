@@ -13,6 +13,8 @@ textarea {
 
 	field-sizing: content;
 
+	transition: all var(--transition-time);
+
 	&:hover {
 		border: var(--text-input_border_hover, var(--text-input_border));
 

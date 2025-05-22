@@ -7,7 +7,7 @@
 	cursor: pointer;
 
 	block-size: var(--checkbox_block-size);
-	inline-size: var(--checkbox_inline-size);
+	inline-size: var(--checkbox_block-size);
 	font: var(--press_font);
 	background: var(--press_background);
 	color: var(--checkbox_color, var(--press-color));

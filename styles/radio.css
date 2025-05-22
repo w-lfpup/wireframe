@@ -7,9 +7,10 @@
 	border-radius: 50%;
 	box-sizing: content-box;
 	cursor: pointer;
+	transition: all var(--transition-time);
 
 	block-size: var(--checkbox_block-size);
-	inline-size: var(--checkbox_inline-size);
+	inline-size: var(--checkbox_block-size);
 
 	/* background: var(--color-invert); */
 	color: var(--press_color);
@@ -31,6 +32,8 @@
 		border-radius: 50%;
 		/* radio island background */
 		background: none;
+
+		transition: all var(--transition-time);
 	}
 
 	&:checked::before {

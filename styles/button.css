@@ -13,6 +13,8 @@
 
 	outline: var(--outline);
 	outline-offset: var(--outline-offset);
+	transition: all var(--transition-time);
+
 
 	@media (hover: hover) {
 		&:hover {

@@ -11,8 +11,10 @@ select {
 
 	border-radius: var(--press_border-radius, 10%);
 	padding-block: var(--button_padding-block, 0.5rem);
+	padding-block: calc((var(--line-height) - 1ch) * 0.5);
 	padding-inline: var(--button_padding-inline, 0.5rem);
 
+	min-block-size: 2rem;
 	overflow: visible;
 
 	&:hover {
@@ -51,4 +53,6 @@ select {
 
 option {
 	overflow: visible;
+	line-height: var(--line-height);
+	padding-block: calc(0.5 * (var(--line-height) - 1ch));
 }

@@ -8,12 +8,15 @@ input[type=checkbox][role=switch] {
 	font-size: 0.5em;
 	/* line-height: 1rem; */
 	cursor: pointer;
+	transition: all var(--transition-time);
+
 	border: var(--press_border);
 	border-radius: 1.75rem;
 
 	&::before {
 		position: relative;
 		content: '';
+		transition: all var(--transition-time);
 	}
 
 	&:checked::before {
@@ -32,6 +35,7 @@ input[type=checkbox][role=switch] {
 		border: var(--press_border);
 		border-radius:  0.5rem;
 		margin-inline: calc((1.5rem - 0.5rem) * 0.5 - 2px);
+		transition: all var(--transition-time);
 	}
 
 	&:checked::after {
