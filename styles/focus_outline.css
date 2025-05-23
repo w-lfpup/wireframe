@@ -1,0 +1,10 @@
+&:focus {
+    outline: var(--outline_focus, --outline_hover);
+    outline-offset: var(--outline-offset_focus, --outline-offset_hover);
+}
+
+&:focus:active {
+    outline: var(--outline_active, --outline_focus);
+    outline-offset: var(--outline-offset_active, --outline-offset_focus);
+}
+
