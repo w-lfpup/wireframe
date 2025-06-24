@@ -13,6 +13,9 @@ input[type=checkbox][role=switch] {
 	border: var(--press_border);
 	border-radius: 1.75rem;
 
+	outline: var(--outline);
+	outline-offset: var(--outline-offset);
+
 	&::before {
 		position: relative;
 		content: '';
@@ -33,7 +36,7 @@ input[type=checkbox][role=switch] {
 		inline-size: 0.5rem;
 		block-size: 0.5rem;
 		border: var(--press_border);
-		border-radius:  0.5rem;
+		border-radius: 0.5rem;
 		margin-inline: calc((1.5rem - 0.5rem) * 0.5 - 2px);
 		transition: all var(--transition-time);
 	}
@@ -43,6 +46,8 @@ input[type=checkbox][role=switch] {
 		inline-size: 0.95rem;
 		block-size: 0.95rem;
 		border-radius: 0.95rem;
+		background: var(--background_inverted);
+		color: var(--press_background);
 		margin-inline: calc((1.5rem - 0.95rem) * 0.5 - 2px);
 	}
 
@@ -51,12 +56,12 @@ input[type=checkbox][role=switch] {
 	}
 
 	&:hover {
-		background: var(--press_background_hover, --press_background);
-		border: var(--press_border_hover, --press_border);
-		box-shadow: var(--press_box-shadow_hover, --press_box-shadow);
+		background: var(--press_background_hover);
+		border: var(--press_border);
+		box-shadow: var(--press_box-shadow_hover);
 
-		outline: var(--outline_hover, --outline);
-		outline-offset: var(--outline-offset_hover, --outline-offset);
+		outline: var(--outline_hover);
+		outline-offset: var(--outline-offset_hover);
 	}
 
 	&:focus {
@@ -65,21 +70,21 @@ input[type=checkbox][role=switch] {
 	}
 
 	&:active {
-		background: var(--press_background_active, --press_background);
-		border: var(--press_border_active, --press_border);
-		box-shadow: var(--press_box-shadow_active, --press_box-shadow);
+		background: var(--press_background_active);
+		border: var(--press_border_active);
+		box-shadow: var(--press_box-shadow_active);
 
-		outline: var(--outline_active, --outline_focus);
-		outline-offset: var(--outline-offset_active, --outline-offset_focus);
+		outline: var(--outline_active);
+		outline-offset: var(--outline-offset_active);
 	}
 
 	&:disabled {
 		cursor: not-allowed;
 
-		background: var(--press_background_disabled, --press_background);
-		border: var(--press_border_disabled, --press_border);
-		box-shadow: var(--press_box-shadow_disabled, --press_box-shadow);
-		opacity: var(--press_opacity_disabled, --press_opacity);
+		background: var(--press_background_disabled);
+		border: var(--press_border_disabled);
+		box-shadow: var(--press_box-shadow_disabled);
+		opacity: var(--press_opacity_disabled);
 
 		outline: var(--outline);
 		outline-offset: var(--outline-offset);		

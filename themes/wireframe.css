@@ -6,15 +6,17 @@
 
 	/* Root */
 	--background: light-dark(#f9f9f9, #17181A);
-	--color: light-dark(#3e3e3e, white);
-	--color-invert: light-dark(white, #3e3e3e);
-	--line-height: 2rem;
-	--font-family: "SF Pro", "San Francisco", "Roboto Flex", "Segoe UI Variable", Helvetica, sans-serif;
+	--background_inverted: light-dark(#17181A, #efefef);
+
 
 	/* animation tempo */
 	--transition-time: 250ms;
 
 	/* Typography */
+	--line-height: 2rem;
+	--font-family: "SF Pro", "San Francisco", "Roboto Flex", "Segoe UI Variable", Helvetica, sans-serif;
+	--color: light-dark(#3e3e3e, white);
+	/* --color_inverted: light-dark(#f9f9f9, #3e3e3e); */
 	--font: 400 1rem/var(--line-height) var(--font-family);
 	--h1_font: 700 8rem/8rem var(--font-family);
 	--h1_color: var(--color);
@@ -34,13 +36,13 @@
 	--selection_color: light-dark(white, black);
 
 	--outline: 4px solid transparent;
-	--outline-offset: 8px;
+	--outline-offset: 4px;
 	--outline_hover: 4px solid hsl(205, 79%, 66%);
-	--outline-offset_hover: 8px;
+	--outline-offset_hover: 4px;
 	--outline_focus: 4px solid var(--selection_background-color);
-	--outline-offset_focus: 8px;
+	--outline-offset_focus: 4px;
 	--outline_active: 4px solid var(--selection_background-color);
-	--outline-offset_active: 8px;
+	--outline-offset_active: 0px;
 
 	/* Press actions */
 	--press_background: var(--background);
