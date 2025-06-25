@@ -8,15 +8,14 @@
 	--background: light-dark(#f9f9f9, #17181A);
 	--background_inverted: light-dark(#17181A, #efefef);
 
-
 	/* animation tempo */
-	--transition-time: 250ms;
+	--transition-time: 100ms;
 
 	/* Typography */
 	--line-height: 2rem;
 	--font-family: "SF Pro", "San Francisco", "Roboto Flex", "Segoe UI Variable", Helvetica, sans-serif;
-	--color: light-dark(#3e3e3e, white);
-	/* --color_inverted: light-dark(#f9f9f9, #3e3e3e); */
+	--color: light-dark(#3e3e3e, #f9f9f9);
+	--color_inverted: light-dark(#f9f9f9, #3e3e3e);
 	--font: 400 1rem/var(--line-height) var(--font-family);
 	--h1_font: 700 8rem/8rem var(--font-family);
 	--h1_color: var(--color);
@@ -36,7 +35,7 @@
 	--selection_color: light-dark(white, black);
 
 	--outline: 4px solid transparent;
-	--outline-offset: 4px;
+	--outline-offset: 0px;
 	--outline_hover: 4px solid hsl(205, 79%, 66%);
 	--outline-offset_hover: 4px;
 	--outline_focus: 4px solid var(--selection_background-color);

@@ -16,33 +16,35 @@
 		<h2>Interactive Elements</h2>
 		<section>
 			<h6>Checkbox</h6>
-			<input type="checkbox" tabindex=0>
-			<input type="checkbox" checked="indeterminate" tabindex=0>
+			<label>
+				<input type="checkbox" class="outline" tabindex=0 class="outline">
+			</label>
+			<input type="checkbox" checked="indeterminate" tabindex=0 class="outline">
 			<input type="checkbox" disabled>
 		</section>
 		<section>
 			<h6>Radio</h6>
-			<input type="radio" name="radio_demo" value="radio_a" tabindex=0>
-			<input type="radio" name="radio_demo" value="radio_b" tabindex=0>
-			<input type="radio" name="radio_demo" value="radio_c" tabindex=0>
+			<input type="radio" name="radio_demo" value="radio_a" tabindex=0 class="outline">
+			<input type="radio" name="radio_demo" value="radio_b" tabindex=0 class="outline">
+			<input type="radio" name="radio_demo" value="radio_c" tabindex=0 class="outline">
 			<input type="radio" disabled tabindex=0>
 		</section>
 		<section>
 			<h6>Switch</h6>
-			<input type="checkbox" role="switch" tabindex=0>
+			<input type="checkbox" role="switch" tabindex=0 class="outline">
 			<input type="checkbox" role="switch" disabled tabindex=0>
 		</section>
 		<section>
 			<h6>Button</h6>
-			<button tabindex=0>glick</button>
-			<button disabled tabindex=0>click</button>
-			<input type="button" value="click" tabindex=0>
-			<input type="button" disabled value="click" tabindex=0>
+			<button tabindex=0 class="outline">click</button>
+			<button disabled tabindex=0 class="outline">click</button>
+			<input type="button" value="click" tabindex=0 class="outline">
+			<input type="button" disabled value="click" tabindex=0 class="outline">
 		</section>
 		<section>
 			<h6>Reset</h6>
-			<button type="reset" tabindex=0>reset</button>
-			<button type="reset" disabled tabindex=0>reset</button>
+			<button type="reset" tabindex=0 class="outline">reset</button>
+			<button type="reset" disabled tabindex=0 class="outline">reset</button>
 		</section>
 		<!-- <section>
 			<h6>Select</h6>
@@ -59,47 +61,47 @@
 		</section> -->
 		<section>
 			<h6>Text Input</h6>
-			<input type="text">
+			<input type="text" class="text-outline">
 			<input type=text disabled>
 		</section>
 		<section>
 			<h6>Email</h6>
-			<input type="text">
+			<input type="text" class="text-outline">
 			<input type=text disabled>
 		</section>
 		<section>
 			<h6>Password</h6>
-			<input type="password">
+			<input type="password" class="text-outline">
 			<input type=password disabled>
 		</section>
 		<section>
 			<h6>Submit</h6>
-			<button type="submit" tabindex=0>submit</button>
+			<button type="submit" tabindex=0 class="outline">submit</button>
 			<button type="submit" disabled tabindex=0>submit</button>
 		</section>
 		<section>
 			<h6>Time</h6>
-			<input type="time">
+			<input type="time" class="text-outline">
 			<input type=time disabled>
 		</section>
 		<section>
 			<h6>Number</h6>
-			<input type="number">
+			<input type="number" class="text-outline">
 			<input type=number disabled>
 		</section>
 		<section>
 			<h6>Date</h6>
-			<input type="date">
+			<input type="date" class="text-outline">
 			<input type=date disabled>
 		</section>
 		<section>
 			<h6>Datetime-local</h6>
-			<input type="datetime-local">
+			<input type="datetime-local" class="text-outline">
 			<input type=datetime-local disabled>
 		</section>
 		<section>
 			<h6>File</h6>
-			<input type="file" tabindex="0">
+			<input type="file" tabindex="0" class="text-outline">
 			<input type=file disabled>
 		</section>
 		<section>
@@ -109,7 +111,7 @@
 		</section>
 		<section>
 			<h6>Textarea</h6>
-			<textarea></textarea>
+			<textarea class="text-outline"></textarea>
 			<textarea disabled></textarea>
 		</section>
 	</main>

@@ -6,15 +6,11 @@ input[type=checkbox][role=switch] {
 	inline-size: 3rem;
 	block-size: 1.75rem;
 	font-size: 0.5em;
-	/* line-height: 1rem; */
 	cursor: pointer;
 	transition: all var(--transition-time);
 
 	border: var(--press_border);
 	border-radius: 1.75rem;
-
-	outline: var(--outline);
-	outline-offset: var(--outline-offset);
 
 	&::before {
 		position: relative;
@@ -59,23 +55,14 @@ input[type=checkbox][role=switch] {
 		background: var(--press_background_hover);
 		border: var(--press_border);
 		box-shadow: var(--press_box-shadow_hover);
-
-		outline: var(--outline_hover);
-		outline-offset: var(--outline-offset_hover);
 	}
 
-	&:focus {
-		outline: var(--outline_focus);
-		outline-offset: var(--outline-offset_focus);
-	}
+	&:focus {}
 
 	&:active {
 		background: var(--press_background_active);
 		border: var(--press_border_active);
 		box-shadow: var(--press_box-shadow_active);
-
-		outline: var(--outline_active);
-		outline-offset: var(--outline-offset_active);
 	}
 
 	&:disabled {
@@ -85,9 +72,6 @@ input[type=checkbox][role=switch] {
 		border: var(--press_border_disabled);
 		box-shadow: var(--press_box-shadow_disabled);
 		opacity: var(--press_opacity_disabled);
-
-		outline: var(--outline);
-		outline-offset: var(--outline-offset);		
 	}
 }
 

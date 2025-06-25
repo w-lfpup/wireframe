@@ -17,6 +17,7 @@
 @import "file_input.css";
 @import "textarea.css";
 @import "select.css";
+@import "outline.css";
 
 /* Browser prefixes awaiting standardization / deprecation */
 @import "webkit.css";
