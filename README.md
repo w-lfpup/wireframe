@@ -4,7 +4,7 @@ Wireframe is a radically simple design system and component set for the web.
 
 It serves to prove three objectives:
 
-A design system should focus on a the physical relationship a person has to an "infinite 2d canvas" (Scott McCloud, Brenda Laurel).
+A design system should focus on a the physical relationship a person has to an "infinite 2d canvas" (Scott McCloud, Brenda Laurel) aka a similacrum, a skeumorph of a physicality: paper prototyping, physical toggles, anything.
 
 Components should be built using first principals of a target platform; in this case, for the web.
 

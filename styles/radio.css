@@ -7,64 +7,67 @@
 	border-radius: 50%;
 	box-sizing: content-box;
 	cursor: pointer;
+	transition: all var(--transition-time);
 
 	block-size: var(--checkbox_block-size);
-	inline-size: var(--checkbox_inline-size);
-	background: var(--press_background);
+	inline-size: var(--checkbox_block-size);
+
+	/* background: var(--color-invert); */
 	color: var(--press_color);
 	border: var(--press_border);
 	box-shadow: var(--press_box-shadow);
-	outline: var(--outline);
-	outline-offset: var(--outline-offset);
 	transition: all var(--transition-time);
 	opacity: var(--press_opacity);
 
+	/* radio island */
 	&::before {
 		content: '';
 		/* --radio-island-size */
-		inline-size: 0.4rem;
-		block-size: 0.4rem;
-		border-radius: 50%;
+		display: block;
+		inline-size: 0.6rem;
+		block-size: 0.6rem;
+		border-radius: 0.3rem;
 		/* radio island background */
 		background: none;
+
+		transition: all var(--transition-time);
+	}
+
+	&:checked::before {
+		background: var(--press_color_checked);
+	}
+	&:checked:hover::before {
+		background: var(--press_color_hover, var(--press_color));
+	}
+
+	&:checked:active::before {
+		background: var(--press_color_active, var(--press_color));
+	}
+
+	&:checked:disabled::before {
+		background: var(--press_color_disabled, var(--press_color));
 	}
 
 	&:hover {
-		background: var(--press_background_hover);
-		color: var(--press_color_hover);
-		border: var(--press_border_hover);
-		box-shadow: var(--press_box-shadow_hover);
+		background: var(--press_background_hover, var(--press_background));
+		border: var(--press_border_hover, var(--press_border));
+		box-shadow: var(--press_box-shadow_hover, var(--press_box-shadow));
 	}
 
-	&:focus {
-		outline: var(--outline_focus);
-		outline-offset: var(--outline-offset_focus);
-	}
+	&:focus {}
 
 	&:active {
-		background: var(--press_background_active);
-		color: var(--press_color_active);
-		border: var(--press_border_active);
-		box-shadow: var(--press_box-shadow_active);
-	}
-
-	&:checked {
-		background: var(--press_background_checked);
-		border: var(--press_border_checked);
-		box-shadow: var(--press_box-shadow_checked);
-
-		&::before {
-			background: var(--press_background);
-		}
+		background: var(--press_background_active, var(--press_background));
+		border: var(--press_border_active, var(--press_border));
+		box-shadow: var(--press_box-shadow_active, var(--press_box-shadow));
 	}
 
 	&:disabled {
 		cursor: not-allowed;
-		
-		background: var(--press_background_disabled);
-		color: var(--press_color_disabled);
-		border: var(--press_border_disabled);
-		box-shadow: var(--press_box-shadow_disabled);
-		opacity: var(--press_opacity_disabled);
+
+		background: var(--press_background_disabled, var(--press_background));
+		border: var(--press_border_disabled, var(--press_border));
+		box-shadow: var(--press_box-shadow_disabled, var(--press_box-shadow));
+		opacity: var(--press_opacity_disabled, var(--press_opacity));
 	}
 }

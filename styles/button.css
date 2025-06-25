@@ -1,53 +1,58 @@
 :is(button, input[type=button]) {
+	appearance: none;
 	cursor: pointer;
-	opacity: 1;
 	position: relative;
 	display: inline-flex;
 
 	background: var(--press_background);
-	font: var(--button_font, --press-font);
+	font: var(--button_font, var(--press_font));
 	border: var(--press_border);
 	border-radius: var(--press_border-radius);
 	padding-block: var(--button_padding-block);
 	padding-inline: var(--button_padding-inline);
+
 	outline: var(--outline);
 	outline-offset: var(--outline-offset);
+	transition: all var(--transition-time);
 
-	inset-block-start: var(--button_inset-block-start);
-	inset-inline-start: var(--button_inset-inline-start);
 
-	&:hover {
-		background: var(--press_background_hover, --press_background);
-		color: var(--press_color_hover, --press_color);
-		border: var(--press_border_hover, --press_border);
-		box-shadow: var(--press_box-shadow_hover, --press_box-shadow);
-		outline: var(--outline_hover, --outline);
-		outline-offset: var(--outline-offset_hover, --outline-offset);
+	@media (hover: hover) {
+		&:hover {
+			background: var(--press_background_hover, var(--press_background));
+			color: var(--press_color_hover, var(--press_color));
+			border: var(--press_border_hover, var(--press_border));
+			box-shadow: var(--press_box-shadow_hover, var(--press_box-shadow));
+			
+			/* outline: var(--outline_hover, var(--outline));
+			outline-offset: var(--outline-offset_hover, var(--outline-offset)); */
+		}
 	}
 
 	&:focus {
-		outline: var(--outline_focus, --outline);
-		outline-offset: var(--outline-offset_focus, --outline-offset);
+		/* outline: var(--outline_focus, var(--outline_hover));
+		outline-offset: var(--outline-offset_focus, var(--outline-offset_hover)); */
 	}
 
 	&:active {
-		inset-block-start: var(--button_inset-block-start_active, --button_inset-block-start);
-		inset-inline-start: var(--button_inset-inline-start_active, --button_inset-inline-start);
-		background: var(--press_background_active, --press_background);
-		color: var(--press_color_active, --press_color);
-		border: var(--press_border_active, --press_border);
-		box-shadow: var(--press_box-shadow_active, --press_box-shadow);
-		outline: var(--outline_active, --outline);
-		outline-offset: var(--outline-offset_active, --outline-offset);
+		background: var(--press_background_active, var(--press_background));
+		color: var(--press_color_active, var(--press_color));
+		border: var(--press_border_active, var(--press_border));
+		box-shadow: var(--press_box-shadow_active, var(--press_box-shadow));
+/* 
+		outline: var(--outline_active, var(--outline_focus));
+		outline-offset: var(--outline-offset_active, var(--outline-offset_focus)); */
 	}
 
 	&:disabled {
 		cursor: not-allowed;
 
-		background: var(--press_background_disabled, --press_background);
-		color: var(--press_color_disabled, --press_color);
-		border: var(--press_border_disabled, --press_border);
-		box-shadow: var(--press_box-shadow_disabled, --press_box-shadow);
-		opacity: var(--press_opacity_disabled, --press_opacity);
+		background: var(--press_background_disabled, var(--press_background));
+		color: var(--press_color_disabled, var(--press_color));
+		border: var(--press_border_disabled, var(--press_border));
+		box-shadow: var(--press_box-shadow_disabled, var(--press_box-shadow));
+		opacity: var(--press_opacity_disabled, var(--press_opacity));
+/* 
+		outline: var(--outline);
+		outline-offset: var(--outline-offset);		 */
 	}
 }

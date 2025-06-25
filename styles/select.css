@@ -11,21 +11,48 @@ select {
 
 	border-radius: var(--press_border-radius, 10%);
 	padding-block: var(--button_padding-block, 0.5rem);
+	padding-block: calc((var(--line-height) - 1ch) * 0.5);
 	padding-inline: var(--button_padding-inline, 0.5rem);
 
+	min-block-size: 2rem;
 	overflow: visible;
 
-	&:hover {}
+	&:hover {
+		border: var(--press_border_hover, --press_border);
+		box-shadow: var(--press_box-shadow_hover, --press_box-shadow);
+
+		outline: var(--outline_hover, --outline);
+		outline-offset: var(--outline-offset_hover, --outline-offset);
+	}
+
 	&:focus {
 		outline: var(--outline_focus);
 		outline-offset: var(--outline-offset_focus);
 	}
-	&:active {}
+
+	&:active {
+		border: var(--press_border_active, --press_border);
+		box-shadow: var(--press_box-shadow_active, --press_box-shadow);
+
+		outline: var(--outline_active, --outline_focus);
+		outline-offset: var(--outline-offset_active, --outline-offset_focus);
+	}
+
 	&:disabled {
 		cursor: not-allowed;
+
+		background: var(--press_background_disabled, --press_background);
+		border: var(--press_border_disabled, --press_border);
+		box-shadow: var(--press_box-shadow_disabled, --press_box-shadow);
+		opacity: var(--press_opacity_disabled, --press_opacity);
+
+		outline: var(--outline);
+		outline-offset: var(--outline-offset);		
 	}
 }
 
 option {
 	overflow: visible;
+	line-height: var(--line-height);
+	padding-block: calc(0.5 * (var(--line-height) - 1ch));
 }
