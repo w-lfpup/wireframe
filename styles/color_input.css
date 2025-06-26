@@ -8,10 +8,7 @@ input[type=color] {
 	cursor: pointer;
 
 	&:hover {}
-	&:focus {
-		outline: var(--outline_focus);
-		outline-offset: var(--outline-offset_focus);
-	}
+	&:focus {}
 	&:active {}
 	&:disabled {
 		cursor: not-allowed;

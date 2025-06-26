@@ -10,6 +10,37 @@ Components should be built using first principals of a target platform; in this 
 
 It's a 'wireframe' developers can use to model their own resilient, mission critical web UIs.
 
+## Classes
+
+```html
+<body>
+    <h1 class="h1-baseline">hello<h1>
+</body>
+
+<body>
+    <h1 wf-h1-baseline>hello<h1>
+</body>
+```
+
+```
+wf-h1
+wf-h2
+wf-h3
+wf-h4
+wf-h5
+wf-h6
+
+wf-h1-baseline
+wf-h2-baseline
+wf-h3-baseline
+wf-h4-baseline
+wf-h5-baseline
+wf-h6-baseline
+p-baseline
+
+
+```
+
 ## License
 
 `Wireframe` is released under the BSD 3-clause License.
